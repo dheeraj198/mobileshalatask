@@ -1,0 +1,390 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+
+.theme-background {
+    background-color: #2980b9 !important;
+}
+
+.mild-background-1 {
+    background-color: #b8e994 !important;
+}
+
+.mild-background-2 {
+    background-color: #fad390 !important;
+}
+
+.mild-background-3 {
+    background-color: #f8c291 !important;
+}
+
+.mild-background-4 {
+    background-color: #6a89cc !important;
+}
+
+.mild-background-5 {
+    background-color: #55efc4 !important;
+}
+
+.mild-background-6 {
+    background-color: #74b9ff !important;
+}
+
+.mild-background-0 {
+    background-color: #a29bfe !important;
+}
+
+.mild-background-7 {
+    background-color: #ff7675 !important;
+}
+
+.mild-background-8 {
+    background-color: #dfe6e9 !important;
+}
+
+.theme-color {
+    color: #2980b9 !important;
+}
+
+.top-contact-bar {
+    margin: 0 auto;
+    padding-top: 4px;
+    padding-bottom: 8px;
+    padding-right: 8px;
+    max-width: 1000px;
+}
+
+.top-contact-bar .institute-number {
+    font-size: 1rem;
+}
+
+.brannd-logo .institute-logo {
+    margin-left: 8px;
+    margin-right: 8px;
+    height: 55px;
+}
+
+.brannd-logo .institute-name {
+    font-size: 1.3rem;
+    line-height: 64px;
+    vertical-align: middle;
+}
+
+section:nth-child(odd) {
+    background: #efefef;
+}
+
+nav {
+    background: white;
+}
+
+.nav-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.carousel-item.banner-carousel-item img {
+    border-radius: 10px;
+}
+
+.carousel.banner-carousel {
+    max-width: 800px;
+    overflow-x: visible;
+    overflow: unset;
+    margin: 10px;
+    width: calc(100% - 20px);
+}
+.carousel.banner-carousel .indicators .indicator-item{
+    bottom:-45px;
+}
+.carousel.video-carousel{
+    margin: 10px;
+    width: calc(100% - 20px);
+}
+.carousel .indicators .indicator-item{
+    background-color:black !important;
+    opacity: 0.3;
+}
+.carousel .indicators .indicator-item.active{
+    opacity: 1;
+}
+
+.youtube-video-section {
+    display: contents;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.youtube-video-holder {
+    margin-top: 10px;
+    ;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.youtube-video-holder iframe {
+    border: 0;
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.gmap-holder {
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.gmap-holder iframe {
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.course-card {
+    border-radius: 10px;
+}
+
+.course-card .card-image {
+    border-radius: 10px 10px 0 20px;
+}
+
+.download-card {
+    border-radius: 10px;
+}
+
+.download-card .card-image {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.download-card .card-image i {
+    font-size: 4rem;
+}
+
+.carousel.testimony {
+    max-width: 1000px;
+    overflow-x: visible;
+    overflow: unset;
+    margin: 10px;
+    width: calc(100% - 20px);
+}
+.carousel.testimony .indicators .indicator-item{
+    background-color:black;
+    opacity: 0.3;
+}
+.carousel.testimony .indicators .indicator-item.active{
+    opacity: 1;
+}
+
+.testimony-card {
+    border-radius: 10px;
+    overflow-x: visible;
+    overflow: unset;
+    margin: 10px;
+    width: calc(100% - 20px) !important;
+}
+
+.testimony-card-holder {
+    overflow-x: visible;
+    overflow: unset;
+    margin: 10px;
+    width: calc(100% - 20px);
+}
+
+.testimony-card .card-image {
+    padding: 16px;
+    background: #4834d4;
+    border-radius: 10px 10px 0 0;
+}
+
+.testimony-card .card-image i {
+    font-size: 4rem;
+    color: black;
+    opacity: 0.2;
+}
+
+.testimony-card .card-image .testimony {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+.testimony-card .card-image .testimony-author {
+    color: white;
+    opacity: 0.5;
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+.testimony-card .card-content {
+    background: #2d3436;
+    border-radius: 0 0 10px 10px;
+}
+
+.testimony-card .card-content .card-title {
+    color: white;
+    opacity: 0.3;
+}
+
+.topper-carousel-item-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    width: 100px;
+}
+
+.topper-carousel-item-inner img {
+    /* height: 100px;
+    width: 100px; */
+    background: red;
+}
+
+.topper-carousel-item-inner .name {
+    margin-top: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.topper-carousel-item-inner .subtext {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.carousel.topper-carousel {
+    overflow-x: visible;
+    height: 150px;
+}
+
+.carousel.topper-carousel .carousel-item {
+    margin-top: 50px;
+}
+
+.iphone {
+    width: 199px;
+    border-radius: 50px;
+    height: 400px;
+    position: relative;
+    display: inline-block;
+}
+
+.iphone.big {
+    width: 270px;
+    height: 550px;
+}
+
+.iphone .screenshot {
+    z-index: 1;
+}
+
+.iphone img {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.main-holder {
+    margin-top: 32px;
+}
+
+.main-holder .title {
+    font-size: 2.3rem;
+    font-weight: 400;
+    line-height: 2.3rem;
+}
+
+.main-holder .subtitle {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.main-holder .message {
+    margin-top: 16px;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+
+.main-holder .bottomHolder {
+    margin-top: 32px;
+    display: inline-block;
+}
+
+.main-holder .action-buttons {
+    padding-top: 32px;
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel.banner-carousel {
+        height:200px;
+    }
+    .main-holder {
+        margin-top: -16px;
+    }
+    .main-holder .title {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    .main-holder .message {
+        margin-top: 16px;
+    }
+    .main-holder .subtitle {
+        white-space: nowrap;
+        margin-top: 0px;
+    }
+    .main-holder .title,
+    .main-holder .message,
+    .main-holder .bottomHolder,
+    .main-holder .subtitle {
+        width: 100%;
+        text-align: center;
+    }
+    .main-holder .bottomHolder {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .course-name{
+        font-size: 1.4rem !important;
+   }
+}
