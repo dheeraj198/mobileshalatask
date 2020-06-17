@@ -80,6 +80,7 @@ body {
     font-size: 1.3rem;
     line-height: 64px;
     vertical-align: middle;
+    font-weight: bold;
 }
 
 section:nth-child(odd) {
@@ -385,6 +386,6 @@ nav {
         margin-bottom: 16px;
     }
     .course-name{
-        font-size: 1.4rem !important;
+        font-size: 1em !important;
    }
 }

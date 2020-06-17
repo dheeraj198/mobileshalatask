@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- edited index file-->
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150203990-2"></script>
@@ -38,7 +38,8 @@
                 <div class="nav-wrapper white">
                     <a href="#" class="brannd-logo black-text" style="display: inline-flex;">
                         <img class="institute-logo responsive-img" :src="instituteLogo" />
-                        <span class="institute-name">{{ instituteName }}</span>
+                        <!-- fixed loading error at site launch -->
+                        <span class="institute-name">Prabha Institute of Civil Services</span>
                     </a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <li><a class="theme-color" href="#contact-section">Contact</a></li>
@@ -167,7 +168,7 @@
                             <div class="card-image waves-effect waves-block waves-light">
                                 <img class="activator" :src="course.image">
                             </div>
-                            <div class="card-content" style="height: 140px;">
+                            <div class="card-content" style="height: 140px; font-size: inherit;">
                                 <span
                                     class="card-title course-name activator grey-text text-darken-4">{{course.name}}</span>
                             </div>
@@ -229,11 +230,11 @@
 
                             <div class="bottomHolder">
                                 <div class="center-align">
-                                    <a class="center-align" style="margin-right: 16px;"
+                                    <a
                                         href="https://play.google.com/store/apps/details?id=com.mobishaala.app&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
                                         target="_blank"><img height="50" alt="Get it on Google Play"
                                             src="./assets/playstore.png"></a>
-                                    <a class="center-align"
+                                    <a 
                                         href="https://itunes.apple.com/gb/app/mobishaala/id1316602075?mt=8"
                                         target="_blank"><img alt="Get it on App Store" height="50"
                                             src="./assets/appstore.svg"></a>
