@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <!-- edited index file-->
@@ -347,4 +348,355 @@
 <!-- <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script> -->
 <script src="./js/main.js?2"></script>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+<!-- edited index file-->
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150203990-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-150203990-2');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prabha Institute of Civil Services</title>
+    <meta name="Description"
+        content="Prabha institute of Civil Services was established on 15th August, 2002 for the benefit of the students who want to prepare for Public Administration but find limited options when it comes to Hindi medium. From 2002 till date we have been playing a vital role in bringing the Civil Service aspirants into the mainstream of civil service examination.">
+    <meta name="Keywords" content="Prabha IAS, IAS, Civil Services, Coaching, BPSC, UPSC, UPPCS, Atul Lohiya">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div id="app">
+        <main>
+            <div class="theme-background white-text right-align">
+                <div class="top-contact-bar">
+                    <span class="institute-number"><i
+                            style="padding-right: 4px;font-size: 1rem;line-height: 1rem;vertical-align: middle;"
+                            class="material-icons">call</i>{{ instituteNumber }}</span>
+                </div>
+            </div>
+            <nav class="z-depth-0">
+                <div class="nav-wrapper white">
+                    <a href="#" class="brannd-logo black-text" style="display: inline-flex;">
+                        <img class="institute-logo responsive-img" :src="instituteLogo" />
+                        <!-- fixed loading error at site launch -->
+                        <span class="institute-name">Prabha Institute of Civil Services</span>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a class="theme-color" href="#contact-section">Contact</a></li>
+                        <li><a class="btn white-text theme-background" href="#join-section">Join Classes</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <section>
+                <div class="section header-slider">
+                    <div class="carousel carousel-slider banner-carousel" ref="bannerCarousel">
+                        <a class="carousel-item banner-carousel-item" v-for="(banner,index) in banners" :key="index"
+                            @click="openLink(banner.action)"><img class=" z-depth-3" :src="banner.image"></a>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="section header-slider">
+                    <div class="carousel carousel-slider video-carousel" ref="videoCarousel">
+                        <div class="carousel-item video-carousel-item" v-for="(video,index) in videos" :key="index">
+                            <div class="section row youtube-video-section">
+                                <div class="col s12 m5 main-holder">
+                                    <div class="title">{{video.title}}</div>
+                                    <div class="subtitle">{{video.subtitle}}</div>
+                                    <div class="message">{{video.message}}</div>
+                                    <div class="action-buttons">
+                                        <a class="waves-effect waves-light btn theme-background"
+                                            href="#join-section">Join
+                                            Classes</a>
+                                    </div>
+                                </div>
+                                <div class="col s12 m7">
+                                    <div class="youtube-video-holder">
+                                        <iframe class="youtube-video z-depth-3"
+                                            :src="'https://www.youtube.com/embed/'+video.youtubeId+'?modestbranding=1&rel=0&cc_load_policy=1&iv_load_policy=3&theme=light&controls=0&disablekb=1'">
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section>
+                <div class="section row youtube-video-section">
+                    <div class="col s12 m5 main-holder">
+                        <div class="title">Accounting</div>
+                        <div class="subtitle">Financial Accounting</div>
+                        <div class="message">Discover what's behind the numbers in financial statements.</div>
+                        <div class="action-buttons">
+                            <a class="waves-effect waves-light btn theme-background" href="#join-section">Join
+                                Classes</a>
+                        </div>
+                    </div>
+                    <div class="col s12 m7">
+                        <div class="youtube-video-holder">
+                            <iframe class="youtube-video z-depth-3"
+                                :src="'https://www.youtube.com/embed/'+youtubeVideoId+'?modestbranding=1&rel=0&cc_load_policy=1&iv_load_policy=3&theme=light&controls=0&disablekb=1'">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <!-- <section>
+                <div class="carousel topper-carousel" ref="topperCarousel">
+                    <div class="carousel-item topper-carousel-item" v-for="(topper,index) in toppers" :key="index">
+                        <div class="topper-carousel-item-inner">
+                            <img class="circle" width="80" height="80" :src="topper.image">
+                            <div class="name">{{topper.name}}</div>
+                            <div class="subtext">{{topper.subtext}}</div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+           
+
+
+            <section>
+                <div class="section row">
+                    <div class="col s12">
+                        <div class="main-holder">
+                            <div class="title">
+                                Our Books
+                            </div>
+                             <div class="subtitle">
+                                    Prabha Publications
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s6 m4 l3" v-for="(book,index) in books" :key="index">
+                        <div class="card z-depth-3">
+                            <div class="card-image waves-effect waves-block waves-light" style="padding-top: 140%;"
+                                @click="openLink(book.url)">
+                                <img class="activator" :src="book.image" style="position: absolute;height: 100%;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://www.amazon.in/s?me=AGHGGPQMIBWVH&marketplaceID=A21TJRUUN4KGV" target="_blank" class="waves-effect theme-background col s12 waves-light btn-large">See All Books</a>
+
+                </div>
+            </section>
+
+            <section>
+                <div class="section row">
+                    <div class="col s12">
+                        <div class="main-holder">
+                            <div class="title">
+                                Our Courses
+                            </div>
+                            <!-- <div class="subtitle">
+                                Cour
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="col s6 m4 l3" v-for="(course,index) in courses" :key="index">
+                        <div class="card course-card z-depth-3">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" :src="course.image">
+                            </div>
+                            <div class="card-content" style="height: 140px; font-size: inherit;">
+                                <span
+                                    class="card-title course-name activator grey-text text-darken-4">{{course.name}}</span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title course-name grey-text text-darken-4">{{course.name}}<i
+                                        class="material-icons right">close</i></span>
+                                <p>{{course.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- <section>
+                    <div class="section row">
+                        <div class="col s12">
+                            <div class="main-holder">
+                                <div class="title">
+                                    Downloads
+                                </div>
+                                <div class="subtitle">
+                                    Download our free content
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col s6 m4 l3" v-for="(download,index) in downloads" :key="index">
+                            <div class="card download-card z-depth-3" @click="openLink(download.url)">
+                                <div class="card-image waves-effect waves-block waves-light"
+                                    :class="'mild-background-'+(index%9)">
+                                    <i class="material-icons">insert_drive_file</i>
+                                </div>
+                                <div class="card-content" style="height: 100px;">
+                                    <span class="card-title activator grey-text text-darken-4">{{download.name}}</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </section> -->
+
+
+            <section id="join-section">
+                <div class="section row" style="overflow: hidden; padding-bottom: 44px;">
+                    <div class="col s12 m5">
+                        <div class="main-holder">
+
+
+                            <div class="title">
+                                Join Classes
+                            </div>
+                            <div class="subtitle">
+                                Download <span class="theme-color">Mobishaala</span> App
+                            </div>
+                            <div class="subtitle" style="margin-top: 16px; margin-bottom: 16px;">
+                                Use Institute code <b class="theme-color">{{instituteCode}}</b>
+                            </div>
+
+                            <div class="bottomHolder">
+                                <div class="center-align">
+                                    <a
+                                        href="https://play.google.com/store/apps/details?id=com.mobishaala.app&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+                                        target="_blank"><img height="50" alt="Get it on Google Play"
+                                            src="./assets/playstore.png"></a>
+                                    <a 
+                                        href="https://itunes.apple.com/gb/app/mobishaala/id1316602075?mt=8"
+                                        target="_blank"><img alt="Get it on App Store" height="50"
+                                            src="./assets/appstore.svg"></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col s12 m7">
+                        <div class="center-align">
+                            <div class="iphone big z-depth-3">
+                                <img class="screenshot" src="./assets/screen.png" />
+                                <img src="./assets/iphonex.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- <section>
+                <div class="section header-slider">
+                    <div class="carousel carousel-slider testimony" ref="testimonyCarousel">
+                        <a class="carousel-item testimony-item" v-for="(testimony,index) in testimonies" :key="index"
+                            href="#one!">
+                            <div class="card testimony-card z-depth-3">
+                                <div class="card-image">
+                                    <div class="">
+                                        <div class="testimony">
+                                            <i class='material-icons'
+                                                style="transform: rotate(180deg) translate(0px, -20px);">format_quote</i>
+                                            <div class="center-align" style="padding: 16px;">{{testimony.text}}</div>
+                                            <i class='material-icons right'
+                                                style="transform: translate(0px, -20px);">format_quote</i>
+                                        </div>
+                                        <br>
+                                        <div class="testimony-author center-align">
+                                            {{testimony.author}}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title">See what our students have to say about us</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section> -->
+            <section id="contact-section">
+                <div class="section row" style="overflow: hidden; padding-bottom: 44px;">
+                    <div class="col s12 m5">
+                        <div class="main-holder">
+                            <div class="title">
+                                Contact
+                            </div>
+                            <div class="subtitle">
+                                Delhi Office
+                            </div>
+                            <div class="message">
+                                Call : +91 9810651005<br>
+                                <br>
+                                Email: atulklohiya@gmail.com<br>
+                                <br>
+                                # 105, 1st Floor,<br> Virat Bhawan Dr. Mukherjee Nagar,<br> Delhi 110009
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m7">
+                        <div class="gmap-holder z-depth-3">
+                            <iframe class="gmap"
+                                :src="'https://maps.google.com/maps?q='+ encodeURIComponent(mapquery) +'&center='+latitude+','+longitude+'&z=13&ie=UTF8&iwloc=&output=embed'"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="page-footer theme-background">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Prabha Institute of Civil Services</h5>
+                        <p class="grey-text text-lighten-4">Prabha institute of Civil Services was established on 15th
+                            August, 2002 for the benefit of the students who want to prepare for Public Administration
+                            but find limited options when it comes to Hindi medium. From 2002 till date we have been
+                            playing a vital role in bringing the Civil Service aspirants into the mainstream of civil
+                            service examination.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2019 {{instituteName}} powered by Mobishaala
+                </div>
+            </div>
+        </footer>
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large green"
+                :href="'https://wa.me/'+whatsappNumber+'?text='+encodeURIComponent(whatsappMessage)" target="_blank">
+                <img class="responsive-img" style="padding:8px" src="./assets/wa_icon.png">
+            </a>
+        </div>
+    </div>
+</body>
+<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script> -->
+<script src="./js/main.js?2"></script>
+
+>>>>>>> 151bcd742497f348c3daa2ffc952c148059ef7ec
 </html>
